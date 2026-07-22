@@ -59,7 +59,7 @@ Ask the represented person or authorized requester to review likeness-sensitive 
 
 ### 7. Package and release safely
 
-Install only `pet.json` and `spritesheet.webp` under `~/.codex/pets/<pet-id>/`. Keep raw references and rejected generations outside the package. Before any public release, apply [release-checklist.md](references/release-checklist.md), remove local paths and metadata, and state the artwork license separately from the skill or documentation license.
+Install only `pet.json` and `spritesheet.webp` under the active Codex home: `$CODEX_HOME/pets/<pet-id>/`, defaulting to `~/.codex/pets/<pet-id>/` on macOS, Linux, and WSL2 or `$HOME\.codex\pets\<pet-id>\` in native Windows PowerShell. Keep raw references and rejected generations outside the package. Before any public release, apply [release-checklist.md](references/release-checklist.md), remove local paths and metadata, and state the artwork license separately from the skill or documentation license.
 
 ## Output expectations
 

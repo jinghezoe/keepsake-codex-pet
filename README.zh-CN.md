@@ -2,7 +2,9 @@
 
 > 让你在意的人成为一个被认真对待的 Codex 宠物——可以是朋友、家人，也可以是仍被你放在心里的人。
 
-[English](README.md) · [完整教程](docs/tutorial.md) · [小龙帽案例](examples/dragon-hood-girl/README.md)
+[English](README.md) · [Windows 指南](docs/windows.md) · [完整教程](docs/tutorial.md) · [小龙帽案例](examples/dragon-hood-girl/README.md)
+
+[![Windows compatibility](https://github.com/jinghezoe/keepsake-codex-pet/actions/workflows/windows-smoke.yml/badge.svg)](https://github.com/jinghezoe/keepsake-codex-pet/actions/workflows/windows-smoke.yml)
 
 ![小龙帽的全部动画状态与注视方向](examples/dragon-hood-girl/media/contact-sheet.png)
 
@@ -40,7 +42,18 @@ Codex v2 宠物使用 `192×208` 单元格，完整图集为 `8×11`（总尺寸
 
 ## 安装小龙帽
 
-在 macOS 中执行：
+### Windows 原生 PowerShell
+
+[Windows 版 ChatGPT 桌面应用](https://learn.chatgpt.com/docs/windows/windows-app)原生支持 PowerShell、插件与技能。在仓库根目录运行：
+
+```powershell
+.\scripts\install-windows.ps1 -PetOnly
+.\scripts\verify-windows.ps1 -PetOnly
+```
+
+脚本会优先使用已设置的 `CODEX_HOME`，否则使用 `$HOME\.codex`。重启或重新加载 Windows 应用，然后在宠物选择器中选择 **小龙帽**。WSL2、更新、手动安装与安全卸载说明见[完整 Windows 指南](docs/windows.md)。
+
+### macOS、Linux 或 WSL2
 
 ```bash
 mkdir -p "$HOME/.codex/pets/dragon-hood-girl"
@@ -51,6 +64,15 @@ cp examples/dragon-hood-girl/package/spritesheet.webp "$HOME/.codex/pets/dragon-
 重启或重新加载 Codex，然后在宠物选择器里选择 **小龙帽**。以后删除本地克隆的 GitHub 项目，也不会删除已经复制到 `~/.codex/pets/dragon-hood-girl` 的安装文件。
 
 ## 安装可复用技能
+
+Windows 原生 PowerShell：
+
+```powershell
+.\scripts\install-windows.ps1 -SkillOnly
+.\scripts\verify-windows.ps1 -SkillOnly
+```
+
+不带 `-PetOnly` 或 `-SkillOnly` 参数时，会同时安装并验证宠物与技能。macOS、Linux 或 WSL2：
 
 ```bash
 mkdir -p "$HOME/.codex/skills"
