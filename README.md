@@ -86,7 +86,11 @@ See [Privacy, consent, and memorial care](docs/privacy-and-consent.md).
 
 ## License
 
-The skill and written documentation are released under the [MIT License](LICENSE). The Dragon Hood Girl example artwork and spritesheet are included for demonstration and personal installation only and are excluded from the MIT grant; see [the asset notice](examples/dragon-hood-girl/ASSET_NOTICE.md).
+The skill, documentation, and configuration are source-available under the [PolyForm Noncommercial License 1.0.0](LICENSE). You may study, modify, use, and share them for permitted noncommercial purposes. **Commercial use is not permitted without prior written permission from `jinghezoe`.**
+
+The Dragon Hood Girl artwork, likeness, contact sheets, animations, and spritesheet remain subject to the stricter [example artwork notice](examples/dragon-hood-girl/ASSET_NOTICE.md). See [Commercial licensing](COMMERCIAL-LICENSING.md) before using any repository content in a product, paid service, client project, promotion, or other commercial activity.
+
+Because commercial use is restricted, this is a source-available project rather than an OSI-approved open-source project.
 
 ## A final note
 
