@@ -86,7 +86,11 @@ Use $make-keepsake-pet to turn my approved photos and memories into a private Co
 
 ## 许可
 
-技能与文字文档使用 [MIT License](LICENSE)。小龙帽示例美术与 spritesheet 只用于展示和个人安装，不包含在 MIT 授权中；请参阅[示例素材说明](examples/dragon-hood-girl/ASSET_NOTICE.md)。
+技能、文档与配置改用 [PolyForm Noncommercial License 1.0.0](LICENSE)。在许可规定的非商业范围内，可以学习、修改、使用和分享。**未经 `jinghezoe` 本人事先明确书面同意，不得进行任何商业使用。**
+
+小龙帽的形象、美术、接触表、动画和 spritesheet 继续受更严格的[示例素材说明](examples/dragon-hood-girl/ASSET_NOTICE.md)约束。任何产品、收费服务、客户项目、宣传推广或其他商业活动，请先阅读[商业授权说明](COMMERCIAL-LICENSING.md)并取得单独书面许可。
+
+由于限制商业使用，本项目属于 source-available（源码可见）项目，而不是 OSI 认可的开源项目。
 
 ## 写在最后
 
