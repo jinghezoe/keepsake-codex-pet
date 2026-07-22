@@ -15,7 +15,9 @@ The goal is not to produce a generic avatar. It is to preserve the details that 
 
 ## What the pet can do
 
-![Failed state: shared sadness, kneeling, then curling up](examples/dragon-hood-girl/media/failed.gif)
+![Dragon Hood Girl showcase: greeting, jumping, directional running, waiting, working, review, and curling up](examples/dragon-hood-girl/media/showcase.gif)
+
+This clean-background showcase cycles through all nine standard animation states. The sixteen cursor-relative gaze poses are shown separately below.
 
 The Codex v2 pet contract uses `192×208` cells in an `8×11` atlas (`1536×2288` total):
 

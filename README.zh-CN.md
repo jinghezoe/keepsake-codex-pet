@@ -15,7 +15,9 @@
 
 ## 小龙帽现在会做什么
 
-![失败状态：共同难过、跪下、侧倒蜷缩](examples/dragon-hood-girl/media/failed.gif)
+![小龙帽动作合集：挥手、跳跃、左右奔跑、等待、工作、审阅与哭泣蜷缩](examples/dragon-hood-girl/media/showcase.gif)
+
+这张无绿边的演示 GIF 会依次播放全部九种标准状态；十六个随光标变化的注视方向则在下方单独展示。
 
 Codex v2 宠物使用 `192×208` 单元格，完整图集为 `8×11`（总尺寸 `1536×2288`）：
 
