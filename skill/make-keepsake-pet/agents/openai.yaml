@@ -1,0 +1,4 @@
+interface:
+  display_name: "Make a Keepsake Codex Pet"
+  short_description: "Turn someone you care about into a respectful Codex pet"
+  default_prompt: "Use $make-keepsake-pet to turn my approved photos and memories into a private, respectful Codex pet."

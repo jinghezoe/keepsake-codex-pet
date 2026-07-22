@@ -1,0 +1,8 @@
+.DS_Store
+*.tmp
+*.log
+private-references/
+source-photos/
+working/
+secrets/
+*.env
