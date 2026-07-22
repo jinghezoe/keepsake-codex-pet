@@ -1,6 +1,10 @@
-# Dragon Hood Girl v2.2 example
+# Dragon Hood Girl v2.3 example
 
 Dragon Hood Girl is a humanoid chibi pet whose plush dragon hood is also a second expressive face. The two faces coordinate across every supported state and all sixteen look directions.
+
+![Multi-action showcase](media/showcase.gif)
+
+The showcase cycles through all nine standard states with GIF-safe transparency and no chroma-key fringe.
 
 ![All states](media/contact-sheet.png)
 
@@ -31,9 +35,9 @@ The eight-frame story moves from standing sadness through attached tears, sinkin
 | --- | --- | --- | --- |
 | ![Waving](media/waving.gif) | ![Waiting](media/waiting.gif) | ![Task running](media/running.gif) | ![Review](media/review.gif) |
 
-| Hover jump | Drag right | Drag left | Idle |
-| --- | --- | --- | --- |
-| ![Jumping](media/jumping.gif) | ![Running right](media/running-right.gif) | ![Running left](media/running-left.gif) | ![Idle](media/idle.gif) |
+| Hover jump | Drag right | Drag left |
+| --- | --- | --- |
+| ![Jumping](media/jumping.gif) | ![Running right](media/running-right.gif) | ![Running left](media/running-left.gif) |
 
 ## Look mechanics
 
