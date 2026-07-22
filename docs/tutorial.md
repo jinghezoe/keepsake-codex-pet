@@ -107,10 +107,12 @@ Define what leads and what follows. For a humanoid pet, the eyes normally lead, 
 The final folder must contain exactly the manifest and the atlas:
 
 ```text
-~/.codex/pets/<pet-id>/
+$CODEX_HOME/pets/<pet-id>/
 ├── pet.json
 └── spritesheet.webp
 ```
+
+`CODEX_HOME` defaults to `~/.codex` on macOS, Linux, and WSL2, and to `$HOME\.codex` in native Windows PowerShell. Keep native Windows and WSL2 installations separate; install inside the environment that runs the Codex agent.
 
 Example manifest:
 

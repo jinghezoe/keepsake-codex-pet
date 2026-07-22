@@ -2,7 +2,9 @@
 
 > Turn someone you care about into a respectful Codex pet — a friend, a family member, or someone you still carry with you.
 
-[Chinese README](README.zh-CN.md) · [Complete tutorial](docs/tutorial.md) · [Install the skill](#install-the-skill) · [Dragon Hood Girl example](examples/dragon-hood-girl/README.md)
+[Chinese README](README.zh-CN.md) · [Windows guide](docs/windows.md) · [Complete tutorial](docs/tutorial.md) · [Install the skill](#install-the-skill) · [Dragon Hood Girl example](examples/dragon-hood-girl/README.md)
+
+[![Windows compatibility](https://github.com/jinghezoe/keepsake-codex-pet/actions/workflows/windows-smoke.yml/badge.svg)](https://github.com/jinghezoe/keepsake-codex-pet/actions/workflows/windows-smoke.yml)
 
 ![Dragon Hood Girl — all animation states and look directions](examples/dragon-hood-girl/media/contact-sheet.png)
 
@@ -40,7 +42,18 @@ Some reactions are brief and event-specific, so a pet may appear to use only idl
 
 ## Try Dragon Hood Girl
 
-On macOS:
+### Windows (native PowerShell)
+
+The [ChatGPT desktop app for Windows](https://learn.chatgpt.com/docs/windows/windows-app) supports native PowerShell, plugins, and skills. From the repository root, install and verify the pet with:
+
+```powershell
+.\scripts\install-windows.ps1 -PetOnly
+.\scripts\verify-windows.ps1 -PetOnly
+```
+
+The scripts honor `CODEX_HOME` when it is set; otherwise they use `$HOME\.codex`. Restart or reload the Windows app, then choose **Dragon Hood Girl** from the pet selector. See the [complete Windows guide](docs/windows.md) for WSL2, updates, manual installation, and safe removal.
+
+### macOS, Linux, or WSL2
 
 ```bash
 mkdir -p "$HOME/.codex/pets/dragon-hood-girl"
@@ -51,6 +64,15 @@ cp examples/dragon-hood-girl/package/spritesheet.webp "$HOME/.codex/pets/dragon-
 Restart or reload Codex, then choose the installed **Dragon Hood Girl** pet from the pet selector. Deleting this cloned repository later does not delete the installed copy under `~/.codex/pets/dragon-hood-girl`.
 
 ## Install the skill
+
+On native Windows PowerShell:
+
+```powershell
+.\scripts\install-windows.ps1 -SkillOnly
+.\scripts\verify-windows.ps1 -SkillOnly
+```
+
+Omit both switches to install and verify the pet and skill together. On macOS, Linux, or WSL2:
 
 ```bash
 mkdir -p "$HOME/.codex/skills"

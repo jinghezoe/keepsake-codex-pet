@@ -1,0 +1,34 @@
+name: Windows compatibility
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  windows-smoke:
+    runs-on: windows-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Install into an isolated Codex home
+        shell: pwsh
+        run: |
+          $testCodexHome = Join-Path $env:RUNNER_TEMP "keepsake-codex-home"
+          .\scripts\install-windows.ps1 -CodexHome $testCodexHome
+          .\scripts\verify-windows.ps1 -CodexHome $testCodexHome
+
+      - name: Verify pet-only and skill-only modes
+        shell: pwsh
+        run: |
+          $petHome = Join-Path $env:RUNNER_TEMP "keepsake-pet-only"
+          $skillHome = Join-Path $env:RUNNER_TEMP "keepsake-skill-only"
+          .\scripts\install-windows.ps1 -CodexHome $petHome -PetOnly
+          .\scripts\verify-windows.ps1 -CodexHome $petHome -PetOnly
+          .\scripts\install-windows.ps1 -CodexHome $skillHome -SkillOnly
+          .\scripts\verify-windows.ps1 -CodexHome $skillHome -SkillOnly

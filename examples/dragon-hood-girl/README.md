@@ -49,10 +49,19 @@ The girl's eyes lead, followed by eyelids, brows, a restrained head/neck turn, a
 
 `package/` is directly installable:
 
+On native Windows PowerShell, run this from the repository root:
+
+```powershell
+.\scripts\install-windows.ps1 -PetOnly
+.\scripts\verify-windows.ps1 -PetOnly
+```
+
+On macOS, Linux, or WSL2:
+
 ```bash
 mkdir -p "$HOME/.codex/pets/dragon-hood-girl"
 cp package/pet.json "$HOME/.codex/pets/dragon-hood-girl/pet.json"
 cp package/spritesheet.webp "$HOME/.codex/pets/dragon-hood-girl/spritesheet.webp"
 ```
 
-The atlas is `1536×2288`, arranged as `8×11` cells of `192×208`, and the manifest declares `spriteVersionNumber: 2`.
+The package is platform-neutral: it contains only JSON and WebP files with a relative `spritesheetPath`. The atlas is `1536×2288`, arranged as `8×11` cells of `192×208`, and the manifest declares `spriteVersionNumber: 2`.
